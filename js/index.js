@@ -50,6 +50,23 @@ navBarItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navBarItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navBarItems[5].textContent = siteContent["nav"]["nav-item-6"];
 
+// Styling for NavBar
+navBarItems.forEach(item => item.style.color = "green");
+
+// New Nav Elements
+let navBar = document.querySelector('nav');
+
+let navHome = document.createElement("a");
+navHome.textContent = "Home";
+navHome.style.color = "green";
+
+let navFAQ = document.createElement("a");
+navFAQ.textContent = "FAQ";
+navFAQ.style.color = "green";
+
+navBar.prepend(navHome);
+navBar.appendChild(navFAQ);
+
 // Header
 let headerTitle = document.querySelector('.cta-text h1');
 headerTitle.textContent = siteContent["cta"]["h1"];
