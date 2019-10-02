@@ -1,4 +1,4 @@
-body {
+.digits {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,9 +6,20 @@ body {
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 5em;
 }
 
 .redDigit {
   color: red;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  font-size: 1em;
+  margin: .5em;
 }
